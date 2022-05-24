@@ -1,11 +1,10 @@
+/* eslint-disable consistent-return */
 const { Router } = require("express");
-const { findById } = require("../models/subscriber");
 
 const subscriberRouter = Router();
 const Subscriber = require("../models/subscriber");
 
 // MIDDLEWARE: get subscriber by id
-// eslint-disable-next-line consistent-return
 async function getSubscriber(req, res, next) {
   let subscriber;
   try {
