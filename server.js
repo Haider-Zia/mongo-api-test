@@ -10,8 +10,8 @@ db.once("open", () => console.log("Connected to database."));
 
 app.use(express.json());
 
-const subscriberRouter = require("./routes/subscriber");
+const vehicleRouter = require("./routes/vehicle");
 
-app.use("/subscriber", subscriberRouter);
+app.use("/vehicle", vehicleRouter);
 
 app.listen(5000, () => console.log("Server running on port 5000."));
